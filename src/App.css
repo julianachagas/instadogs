@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --primary-color: #333;
+  --secondary-color: #764701;
+  --accent-color: #fb1;
+  --box-shadow-color: #fea;
+  --primary-type: Helvetica, Arial, sans-serif;
+  --secondary-type: 'Spectral', serif;
+  --header-height: 6.4rem;
+  --footer-height: 16rem;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--primary-type);
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  display: block;
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh + var(--footer-height));
+  padding-top: var(--header-height);
+}
+
+.container {
+  width: min(80rem, 90%);
+  margin: 0 auto;
+}
+
+.error {
+  text-align: center;
+  padding-block: 2rem;
+  color: red;
+  margin: 0 auto;
+  line-height: 1.5;
+  width: min(50rem, 90%);
+}
+
+.title {
+  font-family: var(--secondary-type);
+  font-size: 4.8rem;
+  font-weight: 700;
+  position: relative;
+  margin: 1.6rem 0;
+  line-height: 1;
+}
+
+.title::before {
+  content: '';
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: var(--accent-color);
+  position: absolute;
+  z-index: -1;
+  bottom: 5px;
+  left: -5px;
+  border-radius: 3px;
+}
+
+.animationLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animationLeft 0.3s forwards;
+}
+
+@keyframes animationLeft {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
