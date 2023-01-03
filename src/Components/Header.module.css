@@ -1,0 +1,32 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header-height);
+}
+
+.loginLink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  letter-spacing: 0.07rem;
+}
+
+.loginLink::after {
+  content: '';
+  background: url('../assets/user-icon.svg') no-repeat center;
+  display: inline-block;
+  width: 14px;
+  height: 17px;
+  position: relative;
+  top: -1px;
+}
