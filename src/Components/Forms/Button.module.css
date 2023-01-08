@@ -1,0 +1,22 @@
+.btn {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  border-radius: 6px;
+  border: none;
+  padding: 1.2rem 1.8rem;
+  min-width: 12.8rem;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:focus,
+.btn:hover {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--box-shadow-color), 0 0 0 4px var(--accent-color);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}

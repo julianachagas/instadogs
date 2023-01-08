@@ -1,0 +1,32 @@
+.inputWrapper {
+  padding-bottom: 1.6rem;
+}
+
+.label {
+  padding-bottom: 0.8rem;
+  display: inline-block;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 1.2rem;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background-color: #eee;
+  transition: all 0.2s ease-in-out;
+}
+
+.input:focus,
+.input:hover {
+  outline: none;
+  border-color: var(--accent-color);
+  background: #fff;
+  box-shadow: 0 0 0 3px var(--box-shadow-color);
+}
+
+.error {
+  color: #f31;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
