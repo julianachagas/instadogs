@@ -1,0 +1,8 @@
+.header {
+  margin-block: 1.6rem 3.2rem;
+  gap: 1.6rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

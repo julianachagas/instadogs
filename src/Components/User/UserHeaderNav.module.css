@@ -1,0 +1,97 @@
+.nav {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  border-radius: 3px;
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav .btn:hover,
+.nav .btn:focus {
+  background: #fff;
+  box-shadow: 0 0 0 3px #eee;
+  border-color: #333;
+  outline: none;
+}
+
+.nav .btn:global(.active),
+.menuBtn:hover,
+.menuBtn:focus,
+.menuBtnActive {
+  background-color: #fff;
+  border: 1px solid var(--accent-color);
+  box-shadow: 0 0 0 3px var(--box-shadow-color);
+  outline: none;
+  color: var(--accent-color);
+}
+
+.nav .btn:global(.active) svg > *,
+.navMobile .btn:hover svg > * {
+  fill: var(--accent-color);
+}
+
+.menuBtn::after {
+  content: '';
+  background-color: currentColor;
+  width: 2rem;
+  height: 2px;
+  box-shadow: 0 6px currentColor, 0 -6px currentColor;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menuBtnActive::after {
+  transform: rotate(90deg);
+  width: 4px;
+  height: 4px;
+  box-shadow: 0 8px currentColor, 0 -8px currentColor;
+}
+
+.navMobile {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 0 1.6rem;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(20px);
+  transition: transform 0.3s;
+  z-index: 1;
+}
+
+.menuBtn,
+.navMobile svg {
+  flex-shrink: 0;
+}
+
+.navMobile .btn {
+  gap: 1.6rem;
+  width: 100%;
+  justify-content: start;
+  padding: 1.2rem 0;
+  background-color: transparent;
+}
+
+.navMobile .btn + .btn {
+  border-top: 1px solid #eee;
+}
+
+.menuBtnActive + .navMobile {
+  opacity: 1;
+  transform: initial;
+  visibility: initial;
+}
