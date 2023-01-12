@@ -8,6 +8,8 @@ import { Login } from './Components/Login/Login';
 import { UserStorage } from './UserContext';
 import { User } from './Components/User/User';
 import { ProtectedRoute } from './Components/Helper/ProtectedRoute';
+import { UserProfile } from './Components/User/UserProfile';
+import { Photo } from './Components/Photo/Photo';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route path="profile/:username" element={<UserProfile />}></Route>
+            <Route path="photo/:id" element={<Photo />}></Route>
           </Routes>
           <Footer />
         </UserStorage>
