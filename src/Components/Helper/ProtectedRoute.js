@@ -4,5 +4,7 @@ import { UserContext } from '../../UserContext';
 
 export const ProtectedRoute = ({ children }) => {
   const { login } = React.useContext(UserContext);
-  return login ? children : <Navigate to="/login" />;
+  if (login === true) return children;
+  if (login === false) return <Navigate to="/login" />;
+  return null;
 };
