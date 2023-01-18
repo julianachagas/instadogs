@@ -7,6 +7,7 @@ import { useFetch } from '../../Hooks/useFetch';
 import { PHOTO_POST } from '../../Api';
 import { useNavigate } from 'react-router-dom';
 import { Error } from '../Helper/Error';
+import { Head } from '../Helper/Head';
 
 const fileTypes = [
   'image/apng',
@@ -71,6 +72,7 @@ export const UserPost = () => {
 
   return (
     <section className={`animationLeft ${styles.photoPost}`}>
+      <Head title="Post Your Photo" />
       <form onSubmit={handleSubmit}>
         <Input
           type="text"
