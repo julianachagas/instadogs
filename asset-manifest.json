@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/instadogs/static/css/main.12658f9c.css",
-    "main.js": "/instadogs/static/js/main.1010ce63.js",
+    "main.css": "/instadogs/static/css/main.1edbd41b.css",
+    "main.js": "/instadogs/static/js/main.fe94261f.js",
     "static/css/37.3dbe8689.chunk.css": "/instadogs/static/css/37.3dbe8689.chunk.css",
     "static/js/37.53b06bab.chunk.js": "/instadogs/static/js/37.53b06bab.chunk.js",
     "static/js/215.da69044b.chunk.js": "/instadogs/static/js/215.da69044b.chunk.js",
@@ -15,14 +15,14 @@
     "static/media/user-icon.svg": "/instadogs/static/media/user-icon.6d65a298e2fba2e83683.svg",
     "static/media/stats.svg": "/instadogs/static/media/stats.c69dd1e16d1f351b25eb7f01658f7c8e.svg",
     "static/media/post.svg": "/instadogs/static/media/post.2fe277f9b2182f23c15f5afd7110067a.svg",
-    "main.12658f9c.css.map": "/instadogs/static/css/main.12658f9c.css.map",
-    "main.1010ce63.js.map": "/instadogs/static/js/main.1010ce63.js.map",
+    "main.1edbd41b.css.map": "/instadogs/static/css/main.1edbd41b.css.map",
+    "main.fe94261f.js.map": "/instadogs/static/js/main.fe94261f.js.map",
     "37.3dbe8689.chunk.css.map": "/instadogs/static/css/37.3dbe8689.chunk.css.map",
     "37.53b06bab.chunk.js.map": "/instadogs/static/js/37.53b06bab.chunk.js.map",
     "215.da69044b.chunk.js.map": "/instadogs/static/js/215.da69044b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12658f9c.css",
-    "static/js/main.1010ce63.js"
+    "static/css/main.1edbd41b.css",
+    "static/js/main.fe94261f.js"
   ]
 }
