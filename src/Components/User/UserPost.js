@@ -84,14 +84,14 @@ export const UserPost = () => {
         <Input
           type="number"
           id="postWeight"
-          label="Weight"
+          label="Weight (kg)"
           placeholder=""
           {...postWeight}
         />
         <Input
           type="number"
           id="postAge"
-          label="Age"
+          label="Age (years)"
           placeholder=""
           {...postAge}
         />
@@ -107,10 +107,12 @@ export const UserPost = () => {
         <Button disabled={loading ? true : false}>Send</Button>
         <Error error={error} />
       </form>
-      <div
-        className={styles.preview}
-        style={{ backgroundImage: `url(${img.preview})` }}
-      ></div>
+      {img.preview && (
+        <div
+          className={styles.preview}
+          style={{ backgroundImage: `url(${img.preview}` }}
+        ></div>
+      )}
     </section>
   );
 };
