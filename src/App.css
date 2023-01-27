@@ -15,7 +15,7 @@ html {
   --accent-color: #fb1;
   --box-shadow-color: #fea;
   --primary-type: Helvetica, Arial, sans-serif;
-  --secondary-type: 'Spectral', serif;
+  --secondary-type: 'Spectral', Georgia, serif;
   --header-height: 6.4rem;
   --footer-height: 16rem;
 }
@@ -33,6 +33,7 @@ ul {
 input {
   display: block;
   font: inherit;
+  width: 100%;
 }
 
 img {
@@ -58,7 +59,7 @@ a {
 }
 
 .container {
-  width: min(80rem, 90%);
+  width: min(80rem, 85%);
   margin: 0 auto;
 }
 
@@ -78,6 +79,7 @@ a {
   position: relative;
   margin: 1.6rem 0;
   line-height: 1;
+  z-index: 1;
 }
 
 .title::before {
