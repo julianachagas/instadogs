@@ -1,0 +1,22 @@
+.delete {
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  background-color: #ddd;
+  line-height: 1;
+  border: 1px solid transparent;
+  font-size: 1.4rem;
+  transition: 0.1s;
+}
+
+.delete:hover:not(:disabled),
+.delete:focus:not(:disabled) {
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px #eee;
+  border-color: #333;
+}
+
+.delete:disabled {
+  cursor: wait;
+  opacity: 0.5;
+}

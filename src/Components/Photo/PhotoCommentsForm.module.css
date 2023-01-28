@@ -1,0 +1,59 @@
+.commentsForm {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 1.6rem;
+}
+
+.commentsForm.single {
+  padding: 1.6rem 0 0;
+}
+
+.commentsForm textarea {
+  overflow-y: auto;
+  resize: none;
+  font: inherit;
+  border: 1px solid #eee;
+  padding: 0.8rem;
+  background: #eee;
+  transition: 0.2s;
+  border-radius: 3px;
+}
+
+.commentsForm button {
+  padding: 0 1.6rem;
+  border: none;
+  background-color: transparent;
+}
+
+.commentsForm textarea:focus,
+.commentsForm textarea:hover {
+  outline: none;
+  border-color: var(--accent-color);
+  background: #fff;
+  box-shadow: 0 0 0 3px var(--box-shadow-color);
+}
+
+.commentsForm button:focus,
+.commentsForm button:hover {
+  outline: none;
+}
+
+.commentsForm button:focus svg path,
+.commentsForm button:hover svg path {
+  fill: var(--box-shadow-color);
+  stroke: var(--accent-color);
+}
+
+.commentsForm button:hover svg g,
+.commentsForm button:focus svg g {
+  animation: bark 0.6s infinite;
+}
+
+@keyframes bark {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
