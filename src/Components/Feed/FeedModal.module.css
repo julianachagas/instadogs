@@ -1,0 +1,18 @@
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  padding: 3.2rem calc(6.4rem + 15px) 3.2rem 6.4rem;
+}
+
+@media (max-width: 1042px) {
+  .modalWrapper {
+    padding: 0 5%;
+  }
+}
