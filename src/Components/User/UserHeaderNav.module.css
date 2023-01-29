@@ -46,7 +46,7 @@
   width: 2rem;
   height: 2px;
   box-shadow: 0 6px currentColor, 0 -6px currentColor;
-  transition: transform 0.2s ease-in-out;
+  transition: 0.3s;
 }
 
 .menuBtnActive::after {
