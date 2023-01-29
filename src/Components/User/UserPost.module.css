@@ -12,6 +12,13 @@
   aspect-ratio: 1/1;
 }
 
+.error {
+  color: #f31;
+  font-size: 1.4rem;
+  margin-block: 1.6rem;
+  line-height: 1.5;
+}
+
 @media (max-width: 640px) {
   .photoPost {
     grid-template-columns: 1fr;
