@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import { Header } from './Components/Header';
 import { Footer } from './Components/Footer';
 import { Home } from './Components/Home';
@@ -15,27 +15,29 @@ import { NotFound } from './Components/NotFound';
 function App() {
   return (
     <div className="app">
-      <BrowserRouter>
+      <HashRouter>
         <UserStorage>
           <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="login/*" element={<Login />} />
-            <Route
-              path="account/*"
-              element={
-                <ProtectedRoute>
-                  <User />
-                </ProtectedRoute>
-              }
-            />
-            <Route path="profile/:username" element={<UserProfile />}></Route>
-            <Route path="photo/:id" element={<Photo />}></Route>
-            <Route path="*" element={<NotFound />}></Route>
-          </Routes>
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="login/*" element={<Login />} />
+              <Route
+                path="account/*"
+                element={
+                  <ProtectedRoute>
+                    <User />
+                  </ProtectedRoute>
+                }
+              />
+              <Route path="profile/:username" element={<UserProfile />}></Route>
+              <Route path="photo/:id" element={<Photo />}></Route>
+              <Route path="*" element={<NotFound />}></Route>
+            </Routes>
+          </main>
           <Footer />
         </UserStorage>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
