@@ -84,22 +84,28 @@ The API used in the project, created by Origamid, deletes new posts and comments
 ## 💻 Preview
 
 - Home: main feed with infinite scroll
+
   <img src="github/feed.gif" alt=""/> <br/><br/>
 
 - Login
-<img src="github/login.gif" alt=""/> <br/><br/>
+
+  <img src="github/login.gif" alt=""/> <br/><br/>
 <div>
 
 - Modal: post details and comments
+
   <img src="github/modal.gif" alt=""/> <br/><br/>
 
 - Photo page and user profile
+
   <img src="github/photo.gif" alt=""/> <br/><br/>
 
 - Post a new photo and dog's details (a preview of the photo is displayed)
+
   <img src="github/newpost.gif" alt=""/> <br/><br/>
 
 - Account page and stats
+
   <img src="github/stats.gif" alt=""/> <br/><br/>
 
 - Mobile
@@ -148,7 +154,7 @@ $ npm run build
 
 ## 📝 License
 
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+This project is under license from MIT. For more details, see the [LICENSE](https://github.com/julianachagas/instadogs/blob/main/LICENSE) file.
 
 <div>
 
