@@ -146,7 +146,7 @@ $ npm run build
 
 - Original project design by <a href="https://github.com/origamid" target="_blank">André Rafael</a>
 
-- Deploying React apps to GitHub Pages: <a href="https://github.com/origamid" target="_blank">article from LogRocket</a>
+- Deploying React apps to GitHub Pages: <a href="https://blog.logrocket.com/deploying-react-apps-github-pages/" target="_blank">article from LogRocket</a>
 
 <div>
 
